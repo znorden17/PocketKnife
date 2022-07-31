@@ -1,0 +1,31 @@
+*{
+background: #121212;
+
+}
+
+
+.panel{
+}
+
+.panel_header{
+    color: #fff;
+}
+
+form{
+    background: #fff;
+
+}
+
+label{
+    background: #fff;
+}
+
+input{
+    background:#fff;
+
+}
+
+.submit{
+    background: #fff;
+    color: #000;
+}
