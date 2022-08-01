@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8" />
     <title>Login</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
 <section class = "login_section">
     <div class = "panel">
-        <div class = "panel_header">
-            Login
-        </div>
+
         <form>
-            <label for="fname">Username</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Password</label><br>
-            <input type="text" id="lname" name="lname">
+            <div class = "panel_header">
+                Login
+            </div>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" name="username" placeholder="username"><br>
+            <label for="password">Password</label><br>
+            <input type="text" id="password"  placeholder="password" name="password">
+            <button class = "submit">Login</button>
+
           </form>
-          <button class = "submit"> Test </button>
         
     </div>
 
