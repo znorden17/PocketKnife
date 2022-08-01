@@ -20,7 +20,7 @@ font-family: 'Playfair Display', serif;
     background:none;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 0.5rem 1rem 1rem 1rem;
+    margin: 0.5rem 1rem 1rem 6rem;
 
 
     
@@ -34,17 +34,7 @@ form{
     height: 300px;
 
 }
-
-label{
-    font-size: 1rem;
-    color: #fff;
-    background: none;
-    letter-spacing: 1px;
-    margin: 0.5rem 1rem 1rem 1rem;
-    text-transform: uppercase;
-
-
-}
+label{}
 
 input{
     background:none;
@@ -59,8 +49,13 @@ input{
 
 input::placeholder{
     color: #fff;
-    font-size: 15px;
     opacity: .4;
+    font-size: 1rem;
+    background: none;
+    letter-spacing: 1px;
+    margin: 0.5rem 1rem 1rem 1rem;
+    text-transform: uppercase;
+    padding-bottom: 7px;
 
 }
 
