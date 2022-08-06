@@ -24,7 +24,7 @@ class echoHandler(BaseHTTPRequestHandler):
 #         self.wfile.write('Hello World'.encode())
 
 
-class requestHandler(BaseHTTPRequestHandler):
+class testRequestHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         self.send_response(200)
         self.send_header("Content-type", "text/html")
@@ -33,6 +33,11 @@ class requestHandler(BaseHTTPRequestHandler):
         self.wfile.write(bytes("<body>", "utf-8"))
         self.wfile.write(bytes("<p>This is an example web server.</p>", "utf-8"))
         self.wfile.write(bytes("</body></html>", "utf-8"))
+
+
+class requestHandler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        pass
 
 
 if __name__ == "__main__":
