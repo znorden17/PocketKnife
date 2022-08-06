@@ -5,68 +5,80 @@ html {
     margin:0;
     padding:0;
     font-family: sans-serif;
-    background: linear-gradient(#e26e43, #f8ce0e);
+    background: linear-gradient( #007991,#7cffd6);
+  }
+
+  h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 5px 15px rgba(0,0,0,.6);
+    border-radius: 10px;
   }
   
 
-
-.panel{
-
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    /* bring your own prefixes */
-    transform: translate(-50%, -50%);
-}
-
-.panel_header{
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
     color: #fff;
-    font-size: 3rem;
-    background:none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin: 0.5rem 1rem 1rem 6rem;
-
-
-    
-}
-
-form{
-    border-radius: 25px;
-
-    background: #222222;
-    width: 350px;
-    height: 300px;
-
-}
-label{}
-
-input{
-    background:none;
+    margin-bottom: 30px;
     border: none;
-    border-bottom: 1px solid red !important;
-    width: 300px;
-    margin: 0.5rem 1rem 2.5rem 1rem;
-
- 
-
-}
-
-input::placeholder{
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
     color: #fff;
-    opacity: .4;
-    font-size: 1rem;
-    background: none;
-    letter-spacing: 1px;
-    margin: 0.5rem 1rem 1rem 1rem;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    display: none;
+  }
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #7cffd6;
+    font-size: 16px;
+    text-decoration: none;
     text-transform: uppercase;
-    padding-bottom: 7px;
-
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+.login-box a:hover{
+    background: orange;
+    color: #fff;
 }
 
-.submit{
-    background: #fff;
-    color: #000;
-    display: block;
-    margin: 0rem 1rem 1rem 18rem;
-}
+  
+  
